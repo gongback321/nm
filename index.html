@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Survival Game</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div id="game-container">
+  <div id="player"></div>
+  <div id="inventory">
+    <div>통나무: <span id="wood-count">0</span></div>
+    <div>나무 창: <span id="spear-count">0</span></div>
+  </div>
+  <div id="crafting-menu" class="hidden">
+    <button id="craft-spear-button">
+      <img src="spear.png" alt="Spear"> 나무 창 제작
+    </button>
+  </div>
+  <div id="message" class="hidden"></div>
+  <div id="game-over" class="hidden">
+    <p>게임 오버</p>
+    <button id="restart-button">재시작</button>
+  </div>
+</div>
+<script src="game.js"></script>
+</body>
+</html>
